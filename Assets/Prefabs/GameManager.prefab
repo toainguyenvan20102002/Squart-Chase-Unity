@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8779467714516315077
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8779467714516315076}
+  - component: {fileID: 8779467714516315078}
+  - component: {fileID: 8779467714516315129}
+  - component: {fileID: 8779467714516315128}
+  - component: {fileID: 8779467714516315130}
+  - component: {fileID: 8779467714516315131}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8779467714516315076
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8779467714516315077}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8779467714516315078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8779467714516315077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa86606b67b73c24d89774e79dd394a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  panelEndgame: {fileID: 0}
+  textScoreInGame: {fileID: 0}
+  textHighScore: {fileID: 0}
+  textYourScore: {fileID: 0}
+  textNotifyNewHighScore: {fileID: 0}
+  leftDirect: {fileID: 0}
+  rightDirect: {fileID: 0}
+  topDirect: {fileID: 0}
+  bottomDirect: {fileID: 0}
+--- !u!114 &8779467714516315129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8779467714516315077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 105b83fb15bb01240a72d798e9653587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smallPointPrefab: {fileID: 4962939799820166894, guid: 211b25235a772d4409793f293bca9330, type: 3}
+  bigPointPrefab: {fileID: 1752318766320214958, guid: b58209458ac85f346902a744ba8b243a, type: 3}
+  percentBigPoint: 0.3
+  pointPositions:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &8779467714516315128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8779467714516315077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fe2edde9b95f3e45a6063c6fcd6ec51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 3331589622394500132, guid: b8b2fdcd93eae134e91c63b12bafc26d, type: 3}
+  ghostPrefab: {fileID: 2863534801737621354, guid: e1f074ca488b15c49ba5d25ff7174ef2, type: 3}
+  minDistanceToPlayer: 25
+  distanceBetweenEnemy: 15
+  maxCountEnemys: 40
+--- !u!114 &8779467714516315130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8779467714516315077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec90706edf23e14abc6c47d7b031572, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8779467714516315131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8779467714516315077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f28a472239efca418edbf7fa492c1da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listPrefabs:
+  - {fileID: 9083703181744058214, guid: 9a570b70d9ff29b4a993f7e28a275d2b, type: 3}
+  - {fileID: 3941180515229699491, guid: 0a7f4ea8611483a419388d5e719012d5, type: 3}
+  listPositionItem:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
